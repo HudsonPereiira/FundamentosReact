@@ -1,0 +1,15 @@
+.Comment{
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.Comment > img {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 8px;
+    }
+
+.CommentBox{
+    flex: 1;
+}
