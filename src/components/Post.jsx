@@ -18,8 +18,8 @@ export function Post() {
             </header>
 
             <div className={styles.content}>
-                <p>Koe, pau no cu.  Acessa aí!!!</p>
-                <p>  <a href="">www.xvideos.com.br</a></p>
+                <p>Acesse o meu link!</p>
+                <p>  <a href="">www.google.com.br</a></p>
 
             </div>
 
@@ -32,8 +32,6 @@ export function Post() {
                 </footer>
             </form>
             <div className={styles.commentList}>
-                <Comment />
-                <Comment />
                 <Comment />
             </div>
         </article>
