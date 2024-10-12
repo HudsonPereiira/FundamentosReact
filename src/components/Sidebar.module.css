@@ -1,62 +1,57 @@
-.Sidebar{
-    background: var(--gray-800);
-    border-radius: 8px;
-    overflow: hidden;
+.Sidebar {
+    background: var(--gray-800); /* Define o fundo da sidebar como cinza escuro */
+    border-radius: 8px; /* Arredonda os cantos da sidebar */
+    overflow: hidden; /* Oculta o conteúdo que ultrapassa os limites */
 }
 
-.cover{
-    width: 100%;
-    height: 72px;
-    object-fit: cover;
+.cover {
+    width: 100%; /* A largura da imagem de cobertura ocupa 100% da sidebar */
+    height: 72px; /* Define a altura da imagem de cobertura */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço disponível sem distorção */
 }
 
-.profile{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    margin-top: -2rem
+.profile {
+    display: flex; /* Alinha itens em um contêiner flexível */
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    align-items: center; /* Centraliza os itens na horizontal */
+    margin-top: -2rem; /* Move o perfil para cima */
 }
 
-.profile strong{
-    margin-top: 1rem;
-    color: var(--gray-400);
-    line-height: 1.6;
+.profile strong {
+    margin-top: 1rem; /* Adiciona espaço acima do nome */
+    color: var(--gray-400); /* Define a cor do nome */
+    line-height: 1.6; /* Aumenta o espaçamento entre linhas */
 }
 
-.profile span{
-    font-size: 0.875 rem;
-    color: var(--gray-400);
-    line-height: 1.6;
+.profile span {
+    font-size: 0.875rem; /* Define o tamanho da fonte da descrição */
+    color: var(--gray-400); /* Define a cor da descrição */
+    line-height: 1.6; /* Aumenta o espaçamento entre linhas */
 }
 
-.Sidebar footer{
-    border-top: 1px solid var(--gray-600);
-    margin-top: 1.5rem;
-    padding: 1.5rem 2rem 2rem;
+.Sidebar footer {
+    border-top: 1px solid var(--gray-600); /* Adiciona uma borda superior */
+    margin-top: 1.5rem; /* Adiciona espaço acima do rodapé */
+    padding: 1.5rem 2rem 2rem; /* Adiciona espaço interno ao redor do rodapé */
 }
 
 .Sidebar footer a {
-    width: 100%;
-    background: transparent;
-    color: var(--green-500);
-    border: 1px solid var(--green-500);
-    border-radius: 8px;
-    height: 50px;
-    padding: 0 1.5rem;
-    font-weight: bold;
-    display: block;
-    text-decoration: none;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    gap: 0.5rem;
-    transition: color 0,1s, background-color 0,1s;
+    width: 100%; /* O link ocupa a largura total */
+    background: transparent; /* Define o fundo transparente */
+    color: var(--green-500); /* Define a cor do texto */
+    border: 1px solid var(--green-500); /* Define uma borda verde */
+    border-radius: 8px; /* Arredonda os cantos do link */
+    height: 50px; /* Define a altura do link */
+    padding: 0 1.5rem; /* Define espaçamento interno nas laterais */
+    font-weight: bold; /* Define o texto em negrito */
+    display: flex; /* Exibe o link como um flex container */
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 0.5rem; /* Define o espaçamento entre os itens */
+    transition: color 0.1s, background-color 0.1s; /* Adiciona transição suave para cor e fundo */
 }
 
-.Sidebar footer a:hover{
-    background: var(--green-500);
-    color: var(--white);
+.Sidebar footer a:hover {
+    background: var(--green-500); /* Altera o fundo para verde ao passar o mouse */
+    color: var(--white); /* Altera a cor do texto para branco ao passar o mouse */
 }

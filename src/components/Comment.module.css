@@ -1,89 +1,85 @@
-.comment{
-    margin-top: 1.5rem;
-    display: flex;
-    gap: 1rem;
+.comment {
+    margin-top: 1.5rem; /* Define o espaçamento superior entre o comentário e o elemento acima */
+    display: flex; /* Alinha os elementos em linha (flexível) */
+    gap: 1rem; /* Espaço entre os elementos filhos dentro do contêiner flex */
 }
 
 .comment > img {
-        width: 3rem;
-        height: 3rem;
-        border-radius: 8px;
-    }
-
-.commentBox{
-    flex: 1;
+    width: 3rem; /* Define a largura da imagem de perfil */
+    height: 3rem; /* Define a altura da imagem de perfil */
+    border-radius: 8px; /* Aplica bordas arredondadas à imagem */
 }
 
-.commentContent{
-    background: var(--gray-700);
-    border-radius: 8px;
-    padding: 1rem;
+.commentBox {
+    flex: 1; /* Permite que o contêiner de comentário expanda para preencher o espaço disponível */
 }
 
-.commentContent header{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+.commentContent {
+    background: var(--gray-700); /* Define o fundo do conteúdo do comentário com um tom de cinza */
+    border-radius: 8px; /* Aplica bordas arredondadas ao contêiner de conteúdo */
+    padding: 1rem; /* Define o espaçamento interno do contêiner de conteúdo */
 }
 
-.authorAndTime strong{
-    display: block;
-    font-size: 0.875rem;
-    line-height: 1.6;
+.commentContent header {
+    display: flex; /* Define a exibição em linha dos itens no cabeçalho */
+    align-items: flex-start; /* Alinha os itens ao início na vertical */
+    justify-content: space-between; /* Espaça os itens ao longo do eixo principal */
 }
 
-.authorAndTime time{
-    display: block;
-    font-size: 0.75rem;
-    line-height: 1.6;
-    color: var(--gray-400);
+.authorAndTime strong {
+    display: block; /* Exibe o nome do autor como bloco para se alinhar verticalmente */
+    font-size: 0.875rem; /* Define o tamanho da fonte */
+    line-height: 1.6; /* Define a altura da linha */
 }
 
-.commentContent header button{
-    background: transparent;
-    border: 0;
-    color: var(--gray-400);
-    cursor: pointer;
-    line-height: 0;
-    border-radius: 2px;
+.authorAndTime time {
+    display: block; /* Exibe a data como bloco */
+    font-size: 0.75rem; /* Define um tamanho de fonte menor para o tempo */
+    line-height: 1.6; /* Define a altura da linha */
+    color: var(--gray-400); /* Define a cor do texto como cinza claro */
+}
 
+.commentContent header button {
+    background: transparent; /* Define o fundo como transparente */
+    border: 0; /* Remove qualquer borda do botão */
+    color: var(--gray-400); /* Define a cor do ícone */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    line-height: 0; /* Remove o espaço em torno do ícone */
+    border-radius: 2px; /* Arredonda levemente as bordas do botão */
 }
 
 .commentContent header button:hover {
-    color: var(--red-500);
+    color: var(--red-500); /* Muda a cor do botão ao passar o mouse para vermelho */
 }
 
-.commentContent p{
-    margin: 1rem;
-    color: var(--gray-300);
+.commentContent p {
+    margin: 1rem; /* Define o espaçamento ao redor do texto do comentário */
+    color: var(--gray-300); /* Define a cor do texto */
 }
 
 .commentBox footer {
-    margin-top: 1rem;
+    margin-top: 1rem; /* Espaçamento superior entre o rodapé e o conteúdo do comentário */
 }
 
-.commentBox footer button{
-    background: transparent;
-    border: 0;
-    color: var(--gray-400);
-    cursor: pointer;
-
-    display: flex;
-    align-items: center;
-
-    border-radius: 2px;
+.commentBox footer button {
+    background: transparent; /* Define o fundo como transparente */
+    border: 0; /* Remove a borda do botão */
+    color: var(--gray-400); /* Define a cor do botão */
+    cursor: pointer; /* Altera o cursor ao passar sobre o botão */
+    display: flex; /* Exibe os elementos dentro do botão em linha */
+    align-items: center; /* Alinha os itens no centro verticalmente */
+    border-radius: 2px; /* Aplica leve arredondamento ao botão */
 }
 
-.commentBox footer button:hover{
-    color: var(--green-300);
-    
+.commentBox footer button:hover {
+    color: var(--green-300); /* Muda a cor para verde ao passar o mouse */
 }
 
-.commentBox footer button svg{
-    margin-right: 0.5rem;
+.commentBox footer button svg {
+    margin-right: 0.5rem; /* Adiciona espaço à direita do ícone (SVG) dentro do botão */
 }
 
-.commentBox footer button span::before{
-    content: "\2022";
-    padding: 0 0.25rem;
+.commentBox footer button span::before {
+    content: "\2022"; /* Insere um ponto antes do contador de aplausos */
+    padding: 0 0.25rem; /* Define o espaçamento ao redor do ponto */
 }

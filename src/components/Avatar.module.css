@@ -1,14 +1,14 @@
-.avatar{
-    width: 3rem;
-    height: 3rem;
-    border-radius: 8px;
+.avatar {
+    width: 3rem; /* Define a largura do avatar em 3 rem */
+    height: 3rem; /* Define a altura do avatar em 3 rem */
+    border-radius: 8px; /* Aplica bordas arredondadas de 8px ao avatar */
 }
 
-.avatarWithBorder{
-    box-sizing: initial;
-    width: calc(3rem + 12px);
-    height: calc(3rem + 12px);
-    border-radius: 8px;
-    border: 4px solid var(--gray-800);
-    outline: 1px solid var(--green-500);
+.avatarWithBorder {
+    box-sizing: initial; /* Usa o valor padrão de box-sizing, para que o tamanho do elemento não inclua bordas e padding */
+    width: calc(3rem + 12px); /* Define a largura em 3 rem mais 12px, ajustando para acomodar a borda */
+    height: calc(3rem + 12px); /* Define a altura em 3 rem mais 12px, ajustando para acomodar a borda */
+    border-radius: 8px; /* Aplica bordas arredondadas de 8px ao avatar com borda */
+    border: 4px solid var(--gray-800); /* Adiciona uma borda de 4px com a cor cinza-escura ao redor do avatar */
+    outline: 1px solid var(--green-500); /* Adiciona um contorno externo de 1px na cor verde ao redor da borda */
 }

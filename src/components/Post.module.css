@@ -1,129 +1,128 @@
 .post {
-    background: var(--gray-800);
-    border-radius: 8px;
-    padding: 2.5rem;
+    background: var(--gray-800); /* Define a cor de fundo do post usando uma variável CSS */
+    border-radius: 8px; /* Arredonda os cantos do post */
+    padding: 2.5rem; /* Adiciona espaço interno ao redor do conteúdo do post */
 }
 
-.post+.post {
-    margin-top: 2rem;
+.post + .post {
+    margin-top: 2rem; /* Adiciona espaço acima de um post que segue outro post */
 }
 
 .content {
-    line-height: 1.6;
-    color: var(--gray-300);
-    margin-top: 1.5rem;
+    line-height: 1.6; /* Define a altura da linha do conteúdo para melhor legibilidade */
+    color: var(--gray-300); /* Define a cor do texto do conteúdo usando uma variável CSS */
+    margin-top: 1.5rem; /* Adiciona espaço acima do conteúdo */
 }
 
 .content p {
-    margin-top: 1rem;
+    margin-top: 1rem; /* Adiciona espaço acima de cada parágrafo dentro do conteúdo */
 }
 
 .content a {
-    font-weight: bold;
-    color: var(--green-500);
-    text-decoration: none;
+    font-weight: bold; /* Define o texto dos links como negrito */
+    color: var(--green-500); /* Define a cor do texto do link usando uma variável CSS */
+    text-decoration: none; /* Remove o sublinhado do link */
 }
 
 .content a:hover {
-    color: var(--green-300);
+    color: var(--green-300); /* Altera a cor do link ao passar o mouse sobre ele */
 }
 
-.post>header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
+.post > header {
+    display: flex; /* Utiliza flexbox para dispor os elementos do cabeçalho do post em linha */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: space-between; /* Distribui o espaço entre os itens, colocando-os nas extremidades */
 }
 
-.post>header time {
-    font-size: 0.875rem;
-    color: var(--gray-400);
+.post > header time {
+    font-size: 0.875rem; /* Define o tamanho da fonte para o elemento <time> */
+    color: var(--gray-400); /* Define a cor do texto do tempo de publicação usando uma variável CSS */
 }
 
 .author {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+    display: flex; /* Utiliza flexbox para dispor os elementos do autor em linha */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    gap: 1rem; /* Define um espaço de 1rem entre os itens do autor */
 }
 
 .authorInfo {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Utiliza flexbox para dispor as informações do autor em coluna */
+    flex-direction: column; /* Organiza os itens em coluna */
 }
 
 .authorInfo strong {
-    display: block;
-    color: var(--gray-100);
-    line-height: 1.6;
+    display: block; /* Exibe o nome do autor como um bloco */
+    color: var(--gray-100); /* Define a cor do texto do nome do autor usando uma variável CSS */
+    line-height: 1.6; /* Define a altura da linha para o nome do autor */
 }
 
 .authorInfo span {
-    display: block;
-    color: var(--gray-400);
-    line-height: 1.6;
+    display: block; /* Exibe a descrição do autor como um bloco */
+    color: var(--gray-400); /* Define a cor do texto da descrição usando uma variável CSS */
+    line-height: 1.6; /* Define a altura da linha para a descrição do autor */
 }
 
 .avatar {
-    box-sizing: initial;
-    width: 5rem;
-    height: 5rem;
-    border-radius: 8px;
-    border: 4px solid var(--gray-800);
-    outline: 1px solid var(--green-500);
+    box-sizing: initial; /* Define o modelo de box para o avatar */
+    width: 5rem; /* Define a largura do avatar */
+    height: 5rem; /* Define a altura do avatar */
+    border-radius: 8px; /* Arredonda os cantos do avatar */
+    border: 4px solid var(--gray-800); /* Adiciona uma borda ao redor do avatar */
+    outline: 1px solid var(--green-500); /* Adiciona um contorno ao redor do avatar */
 }
 
 .commentForm {
-    width: 100%;
-    margin-top: 1.5rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--gray-600);
+    width: 100%; /* Define a largura do formulário de comentários como 100% do contêiner pai */
+    margin-top: 1.5rem; /* Adiciona espaço acima do formulário de comentários */
+    padding-top: 1.5rem; /* Adiciona espaço interno na parte superior do formulário de comentários */
+    border-top: 1px solid var(--gray-600); /* Adiciona uma borda superior ao formulário de comentários */
 }
 
-.commentForm>strong {
-    line-height: 1.6;
-    color: var(--gray-100)
+.commentForm > strong {
+    line-height: 1.6; /* Define a altura da linha para o título do formulário de comentários */
+    color: var(--gray-100); /* Define a cor do texto do título usando uma variável CSS */
 }
 
 .commentForm textarea {
-    width: 100%;
-    background-color: var(--gray-900);
-    border: 0;
-    resize: none;
-    height: 6rem;
-    padding: 1rem;
-    border-radius: 8px;
-    color: var(--gray-100);
-    line-height: 1.4;
-    margin-top: 1rem;
+    width: 100%; /* Define a largura da área de texto como 100% do contêiner pai */
+    background-color: var(--gray-900); /* Define a cor de fundo da área de texto usando uma variável CSS */
+    border: 0; /* Remove a borda padrão da área de texto */
+    resize: none; /* Remove a capacidade de redimensionar a área de texto */
+    height: 6rem; /* Define a altura da área de texto */
+    padding: 1rem; /* Adiciona espaço interno ao redor do conteúdo da área de texto */
+    border-radius: 8px; /* Arredonda os cantos da área de texto */
+    color: var(--gray-100); /* Define a cor do texto da área de texto usando uma variável CSS */
+    line-height: 1.4; /* Define a altura da linha para o texto da área de texto */
+    margin-top: 1rem; /* Adiciona espaço acima da área de texto */
 }
 
 .commentForm footer {
-    visibility: hidden;
-    max-height: 0;
+    visibility: hidden; /* Inicialmente oculta o rodapé do formulário */
+    max-height: 0; /* Define a altura máxima do rodapé como 0, ocultando-o */
 }
-.commentForm:focus-within footer{
-    visibility: visible;
-    max-height: none;
+
+.commentForm:focus-within footer {
+    visibility: visible; /* Exibe o rodapé do formulário quando a área de texto está em foco */
+    max-height: none; /* Remove a restrição de altura do rodapé ao estar em foco */
 }
 
 .commentForm button[type=submit] {
-    padding: 1rem 1.5rem;
-    margin-top: 1rem;
-    border-radius: 8px;
-    border: 0;
-    background: var(--green-500);
-    color: var(--white);
-    font-weight: bold;
-    cursor: pointer;
+    padding: 1rem 1.5rem; /* Adiciona espaço interno ao botão de envio */
+    margin-top: 1rem; /* Adiciona espaço acima do botão de envio */
+    border-radius: 8px; /* Arredonda os cantos do botão de envio */
+    border: 0; /* Remove a borda padrão do botão */
+    background: var(--green-500); /* Define a cor de fundo do botão usando uma variável CSS */
+    color: var(--white); /* Define a cor do texto do botão usando uma variável CSS */
+    font-weight: bold; /* Define o texto do botão como negrito */
+    cursor: pointer; /* Altera o cursor para um ponteiro ao passar sobre o botão */
 
-    transition: background-color 0.1s;
-
+    transition: background-color 0.1s; /* Define uma transição suave para a cor de fundo do botão */
 }
 
 .commentForm button[type=submit]:hover {
-    background: var(--green-300);
+    background: var(--green-300); /* Altera a cor de fundo do botão ao passar o mouse sobre ele */
 }
 
 .commentList {
-    margin-top: 2rem;
+    margin-top: 2rem; /* Adiciona espaço acima da lista de comentários */
 }

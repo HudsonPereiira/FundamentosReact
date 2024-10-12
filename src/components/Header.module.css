@@ -1,11 +1,11 @@
 .header {
-    background: var(--gray-800);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1.25rem 0;
+    background: var(--gray-800); /* Define o fundo do cabeçalho com uma cor cinza escura */
+    display: flex; /* Utiliza o layout flexível para organizar o conteúdo dentro do cabeçalho */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    padding: 1.25rem 0; /* Adiciona um espaçamento interno acima e abaixo do cabeçalho */
 }
 
 .header img {
-    height: 2.5rem
+    height: 2.5rem; /* Define a altura da imagem do logotipo */
 }

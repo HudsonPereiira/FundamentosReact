@@ -1,46 +1,44 @@
 :root {
-    --white: #ffffff;
-    --gray-100: #e1e1e6;
-    --gray-300: #c4c4cc;
-    --gray-400: #8d8d99;
-    --gray-600: #323238;
-    --gray-700: #292932;
-    --gray-800: #202024;
-    --gray-900: #121214;
+    --white: #ffffff; /* Definição da cor branca */
+    --gray-100: #e1e1e6; /* Um tom claro de cinza */
+    --gray-300: #c4c4cc; /* Um tom médio de cinza */
+    --gray-400: #8d8d99; /* Um tom escuro de cinza */
+    --gray-600: #323238; /* Um tom bem escuro de cinza */
+    --gray-700: #292932; /* Um tom quase preto de cinza */
+    --gray-800: #202024; /* Um tom muito escuro de cinza */
+    --gray-900: #121214; /* Um tom preto */
 
-    --green-500: #00875f;
-    --green-300: #029f70;
+    --green-500: #00875f; /* Um tom médio de verde */
+    --green-300: #029f70; /* Um tom claro de verde */
 
-    --red-500: #f75a68;
+    --red-500: #f75a68; /* Um tom de vermelho */
 }
 
 :focus {
-    outline: transparent;
-    box-shadow: 0 0 0 2px var(--green-500);
+    outline: transparent; /* Remove o contorno padrão de foco */
+    box-shadow: 0 0 0 2px var(--green-500); /* Adiciona uma sombra verde ao redor do elemento em foco */
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box; /* Inclui bordas e preenchimento na largura e altura total do elemento */
 }
 
 body {
-    background: var(--gray-900);
-    color: var(--gray-300-);
-    -webkit-font-smoothing: antialiased;
-
+    background: var(--gray-900); /* Define o fundo do corpo como um tom escuro de cinza */
+    color: var(--gray-300); /* Define a cor do texto como um tom médio de cinza */
+    -webkit-font-smoothing: antialiased; /* Suaviza a renderização das fontes em navegadores WebKit */
 }
 
 body,
 input,
 textarea,
 button  {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    align-items: center;
-    color: var(--gray-300);
-    /*mantém a fonte no tamanho padrão 16px e permite que o usuário aumente ou diminua. Se eu definir o PX da fonte, o usuário nao pode alterar o tamanho.*/
+    font-family: 'Roboto', sans-serif; /* Define a fonte padrão como 'Roboto', com fallback para sans-serif */
+    font-weight: 400; /* Define o peso da fonte como normal */
+    font-size: 1rem; /* Define o tamanho da fonte como 1rem (16px em tamanhos padrão) */
+    align-items: center; /* Alinha itens ao centro (não aplicável diretamente a body, mas relevante para elementos de layout flexíveis) */
+    color: var(--gray-300); /* Define a cor do texto como um tom médio de cinza */
+    /* Mantém a fonte no tamanho padrão 16px e permite que o usuário aumente ou diminua. Se eu definir o PX da fonte, o usuário não pode alterar o tamanho. */
 }
-
