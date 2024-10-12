@@ -1,13 +1,14 @@
 
 import styles from './Post.module.css';
 import {Comment} from './Comment.jsx';
+import { Avatar } from './Avatar.jsx';
 
 export function Post() {
     return (
         <article className={styles.post}>
             <header>
                 <div className={styles.author}>
-                    <img className={styles.avatar} src="http://hdqwalls.com/wallpapers/thanos-avengers-infinity-4k-z8.jpg" />
+                    <Avatar src="https://github.com/maykbrito.png" />
                     <div className={styles.authorInfo}>
                         <strong>Thanos</strong>
                         <span>Destruidor de Mundos</span>
